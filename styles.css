@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+:root{
+    --color-darkcyan:hsl(185, 75%, 39%);
+    --color-verydark:hsl(229, 23%, 23%);
+    --color-grayish:hsl(227, 10%, 46%);
+    --color-darkgrey:hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--color-darkcyan);
+    height: 100vh;
+}   
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.elementos__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    border-radius: 2em 2em 1em 1em;
+    height:20em;
+}
+
+
+.informacoes__card{
+    text-align: center;
+    padding: 1em;
+}
+.nome__user__card{
+    font-weight: 700;
+    color: var(--color-verydark);
+}
+
+.idade__card{
+    font-weight: 400;
+}
+
+.cidade__card{
+    color: var(--color-darkgrey);
+    font-size: 0.9em;
+}
+
+hr{
+    color: var(--color-darkgrey);
+    width: 100%;
+    height: 0.2em;
+}
+
+.informacoes__metricas__card {
+    list-style: none;
+    padding: 0;
+    height: 4em;
+    margin-top: 1em;
+}
+  
+  .item__lista__card {
+    display: inline-block;
+    margin-right: 20px; 
+  }
+  
+  .numeros__lista {
+    font-weight: bold;
+    font-size: 20px; 
+  }
+  
+  .texto__lista {
+    text-align: center;
+    display: block;
+    font-size: 12px; 
+    color: var(--color-verydark);
+  }
+  
+
+.img__card{
+    border-radius: 50%;
+    position: absolute;
+    background-color: #f6f6f6;
+    top: 330px;
+    border: 3px solid #f6f6f6;
+}
+
+.background__card{
+    height: 80%;
+}
+
+.img__fundo__card{
+    border-radius: 1em 1em 0 0;
+}
+
+@media (min-width: 768px) {
+    .img__card {
+      bottom: auto; 
+      top: 510px; 
+    }
+  }
+
+
+
